@@ -4,102 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Konversi Suhu - Amel</title>
+    <title>Website Konversi Suhu</title>
 
     <!--CSS External-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Header Content -->
     <header>
-        <h1>Website Konversi Suhu - Amel</h1>
+        <h1 class="title">Website Konversi Suhu</h1>
     </header>
+
+    <hr />
 
     <!-- Main Content -->
     <main>
         <!-- Intoduction -->
         <section>
             <!-- Dumay Intro -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cumque quam ratione labore beatae laborum illum ab non ad praesentium esse, impedit maxime laudantium expedita. Ex eaque asperiores earum magni.
-            Exercitationem aliquid harum odio voluptatem, tenetur debitis a accusamus at facilis minima dolores amet tempora magnam deleniti temporibus unde, quos omnis labore optio. Quasi minima ipsum eius quod labore doloribus.
-            Qui a labore tempora laboriosam nisi facere omnis dolores provident esse suscipit laborum quo eum neque officia cupiditate ipsum fugiat nulla, sint dolorum sunt veniam exercitationem dolor rem! Similique, cumque!
-            Vero porro libero distinctio rerum maxime facere odit, sunt nobis voluptas fugit eius magnam fugiat tempore in quaerat iste temporibus quasi a at. Nemo dignissimos et expedita dolorum eaque porro!
-            Cumque provident veniam sit. Eius magnam magni assumenda maxime voluptatum nulla dignissimos? Dolorum rerum vero ducimus nulla? Quod sunt, harum ex tempora tempore animi rerum temporibus veniam nostrum necessitatibus voluptate.</p>
+            <p class="intro">Selamat datang di Kalkulator Konversi Suhu!</p>
+            <p class="intro">Website ini membantu Anda mengubah suhu dari Celcius ke Fahrenheit, atau sebaliknya, dengan cepat dan mudah.</p>
+            <p class="intro">Masukkan nilai suhu yang ingin Anda konversi, lalu klik tombol konversi!</p>
         </section>
 
-        <!-- Form Konversi Suhu -->
-        <form class="section-content">
-            <div class="section-item" >
-                <label for="konversi-input">Celcius (&deg;C):</label>
-            </div>
-
-            <div>
-                <textarea id="konversi-input"></textarea>
-            </div>
-
-            <!-- Form Action -->
-            <div class="section-item">
-                <button class="bg-1">Konversi</button>
-                <button class="bg-2">Reset</button>
-                <button class="bg-3">Reverse</button>
-            </div>
-        </form>
-
-        <!-- Hasil Konversi Suhu -->
-        <section class="section-content">
-            <div class="section-item">
-                <label for="result-input">Farenheit (&deg;F):</label>
-            </div>
-
-            <div class="section-item">
-                <textarea id="result-input" readonly></textarea>
-            </div>
-        </section>
-
-        <!-- Penjelasan -->
-        <section class="section-content">
-            <div class="section-item">
-                <label for="calculate-detail">Cara Kalkulasi:</label>
-            </div>
-
-            <div class="section-item">
-                <textarea name="" id="calculate-detail" readonly></textarea>
-            </div>
-        </section>
-
-        <!-- Informasi Tambahan -->
-        <section>
-            <header>
-                <h1>Cara Konversi dari Celcius (&deg;C) ke Farenheit (&deg;F)</h1>
-            </header>
-
-            <hr />
-
-            <!-- Content Informasi -->
-            <article>
-                <p>Suhu <span class="formula">S</span> dalam derajat Farenheit (&deg;F)</p>
-            
-                <!-- Formula -->
-                <div class="formula">
-                    S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32
+         <section class="section-flex">
+             <!-- Form Konversi Suhu -->
+            <form class="section-content">
+                <div class="section-item" >
+                    <p>Input Suhu:</p>
+                    <hr class="hr-short" />
+                    <label for="konversi-input">Celcius (&deg;C):</label>
                 </div>
-                
+
                 <div>
-                    atau
+                    <textarea id="konversi-input"></textarea>
                 </div>
 
-                <div class="formula">
-                    S<sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> x 1,8) + 32
+                <!-- Form Action -->
+                <div class="section-item">
+                    <button class="bg-1">Konversi</button>
+                    <button class="bg-2">Reset</button>
+                    <button class="bg-3">Reverse</button>
                 </div>
-            </article>
+            </form>
+
+            <!-- Hasil Konversi Suhu -->
+            <section class="section-content">
+                <div class="section-item">
+                    <p>Hasil Konversi:</p>
+                    <hr class="hr-short" />
+                    <label for="result-input">Farenheit (&deg;F):</label>
+                </div>
+
+                <div class="section-item">
+                    <textarea id="result-input" readonly></textarea>
+                </div>
+            </section>
+         </section>
+
+         
+        <section class="section-flex">
+            <!-- Penjelasan -->
+            <section class="section-content">
+                <div class="section-item">
+                    <label for="calculate-detail">Cara Kalkulasi:</label>
+                </div>
+
+                <div class="section-item">
+                    <textarea name="" id="calculate-detail" readonly></textarea>
+                </div>
+            </section>
+
+            <!-- Informasi Tambahan -->
+            <section class="box-formula">
+                <header>
+                    <h1>Rumus Konversi dari Celcius (&deg;C) ke Farenheit (&deg;F)</h1>
+                </header>
+
+                <hr />
+
+                <!-- Content Informasi -->
+                <article>
+                    <p>Suhu <span class="formula">S</span> dalam derajat Farenheit (&deg;F)</p>
+                
+                    <!-- Formula -->
+                    <div class="formula">
+                        S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32
+                    </div>
+                    
+                    <div>
+                        atau
+                    </div>
+
+                    <div class="formula">
+                        S<sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> x 1,8) + 32
+                    </div>
+                </article>
+            </section>
         </section>
     </main>
+
+    <hr />
 
     <!-- Footer Content -->
     <footer>
         <p>&copy; 2025 Amelia Puji Lestari. All rights reserved.</p>
     </footer>
+
+    <!-- Javascript External -->
+    <script></script>
 
 </body>
 
