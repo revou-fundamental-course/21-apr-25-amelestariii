@@ -69,6 +69,8 @@ textarea {
     resize: vertical;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    color: white;
 }
 
 .formula {
@@ -90,4 +92,43 @@ textarea {
 footer, p {
     text-align: center;
     margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+
+    .section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-content {
+        margin: 16px 0;
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .box-formula {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    .formula {
+        font-size: large;
+    }
 }
